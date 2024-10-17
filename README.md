@@ -3,7 +3,7 @@ This is an Project used to find whether person suffering from Monkey Pox or not.
 
 ## Setup Mac-OS:
 
- - (Reference)[https://medium.com/@jarondlk/installing-tensorflow-metal-on-apple-silicon-macos-with-miniconda-f43121fe3054]
+ - [Reference](https://medium.com/@jarondlk/installing-tensorflow-metal-on-apple-silicon-macos-with-miniconda-f43121fe3054)
 
 ```bash
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o Miniconda3-latest-MacOSX-x86_64.sh
