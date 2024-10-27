@@ -11,15 +11,22 @@ bash Miniconda3-latest-MacOSX-x86_64.sh
 
 conda create --name venv python=3.9
 
-conda activate venv
+conda activate tf
 
-conda install -c apple tensorflow-deps --force-reinstall -n venv
+conda install -c apple tensorflow-deps --force-reinstall -n tf
+
+conda install cudatoolkit=9.0 tensorflow-gpu=1.11.0
 
 python3 -m pip install tensorflow-macos==2.9
 
-python3 -m pip install tensorflow-metal==0.5.0
+python3 -m pip install tensorflow-metal==0.5.0    // dont use this
 
 python3 -m pip list | grep tensorflow
 
 conda deactivate
+```
+
+```
+conda activate tf
+jupyter lab
 ```
