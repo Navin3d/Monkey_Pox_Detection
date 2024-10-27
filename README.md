@@ -23,10 +23,13 @@ python3 -m pip install tensorflow-metal==0.5.0    // dont use this
 
 python3 -m pip list | grep tensorflow
 
+python3 -m pip install scipy
+
 conda deactivate
 ```
 
 ```
 conda activate tf
+
 jupyter lab
 ```
