@@ -30,7 +30,9 @@ conda deactivate
 ```
 
 ```
-conda activate tf
+active ones are venv, tf, tf-env
+
+conda activate tf-env
 
 jupyter lab
 ```
