@@ -5,6 +5,7 @@ This is an Project used to find whether person suffering from Monkey Pox or not.
 
  - https://medium.com/@jarondlk/installing-tensorflow-metal-on-apple-silicon-macos-with-miniconda-f43121fe3054
  - https://medium.com/@yningz/how-to-install-and-actually-run-with-tensorflow-on-m1-m2-mac-with-metal-plugin-in-3-steps-81341d0a9363
+ - https://forums.developer.apple.com/forums/thread/768858
 
 ```bash
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o Miniconda3-latest-MacOSX-x86_64.sh
@@ -30,7 +31,7 @@ conda deactivate
 ```
 
 ```
-active ones are venv, tf, tf-env
+active ones are venv, tf, tf-env, torch
 
 conda activate tf-env
 
