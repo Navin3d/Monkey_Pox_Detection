@@ -8,6 +8,33 @@ This is an Project used to find whether person suffering from Monkey Pox or not.
  - https://forums.developer.apple.com/forums/thread/768858
  - https://forums.developer.apple.com/forums/tags/tensorflow-metal
 
+```
+import javax.sql.DataSource;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+@Configuration
+public class DataSourceConfig {
+
+    @Value("${spring.datasource.url}")
+    private String url;
+
+    @Value("${spring.datasource.username}")
+    private String username;
+
+    @Value("${spring.datasource.password}")
+    private String encodedPassword;
+
+    @Bean
+    public DataSource dataSource() {
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setUrl(url);
+        dataSource.setUsername(username);
+        dataSource.setPassword(PasswordDecoder.decode(encodedPassword));
+        return dataSource;
+    }
+}
+```
+
 ```bash
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o Miniconda3-latest-MacOSX-x86_64.sh
 bash Miniconda3-latest-MacOSX-x86_64.sh
