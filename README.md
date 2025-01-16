@@ -58,8 +58,10 @@ python3 -m pip install scipy
 conda deactivate
 ```
 
+Kernals Path:  /Users/navin3d/Library/Jupyter/kernels/tf-1-2025
+
 ```
-active ones are venv, tf, tf-env, torch
+active ones are tf-1, tf-1-2025 torch
 
 conda activate tf-env
 
